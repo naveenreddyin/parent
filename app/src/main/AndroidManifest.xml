@@ -20,6 +20,10 @@
             android:name="com.parent.parent.ParentActivity"
             android:label="@string/title_activity_parent" >
         </activity>
+        <activity
+            android:name="com.parent.kid.KidActivity"
+            android:label="@string/title_activity_kid" >
+        </activity>
     </application>
 
 </manifest>
