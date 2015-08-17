@@ -1,13 +1,13 @@
 package core.parent.core;
 
-import android.app.Activity;
-import android.content.SharedPreferences;
+import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.parent.gcm.RegistrationIntentService;
 
 /**
  * Created by naveenkumarvasudevan on 8/9/15.
@@ -16,6 +16,9 @@ public abstract class BaseAcitivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle bundle){
         super.onCreate(bundle);
+        Log.i("assfs", "starting reg..........");
+        Intent intent = new Intent(this, RegistrationIntentService.class);
+        startService(intent);
 
     }
 

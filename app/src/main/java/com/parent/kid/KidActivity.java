@@ -1,13 +1,14 @@
 package com.parent.kid;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import core.parent.core.BaseAcitivity;
 import core.parent.core.R;
 
-public class KidActivity extends ActionBarActivity {
+public class KidActivity extends BaseAcitivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
