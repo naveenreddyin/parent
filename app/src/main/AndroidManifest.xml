@@ -48,19 +48,36 @@
         </activity>
 
         <service
-            android:name="com.parent.gcm.ParentGCMListenerService"
-            android:enabled="true"
-            android:exported="true" >
+            android:name=".ParentGCMListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
         </service>
         <service
-            android:name="com.parent.gcm.ParentInstanceIDListenerService"
-            android:enabled="true"
-            android:exported="true" >
+            android:name=".ParentInstanceIDListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
         </service>
         <service
-            android:name="com.parent.gcm.RegistrationIntentService"
-            android:exported="false">
+            android:name=".RegistrationIntentService"
+            android:exported="false" >
         </service>
+
+        <activity
+            android:name="com.parent.parent.ConfigureKidsDeviceActivity"
+            android:label="@string/title_activity_configure_kids_device" >
+        </activity>
+        <activity
+            android:name="com.parent.parent.AskDetailOfParentActivity"
+            android:label="@string/title_activity_ask_detail_of_parent" >
+        </activity>
+        <activity
+            android:name="com.parent.kid.ConnectToParentActivity"
+            android:label="@string/title_activity_connect_to_parent" >
+        </activity>
     </application>
 
 </manifest>

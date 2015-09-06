@@ -1,26 +1,24 @@
-package core.parent.core;
+package com.parent.parent;
 
-import android.content.Intent;
+import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-/**
- * Created by naveenkumarvasudevan on 8/9/15.
- */
-public abstract class BaseAcitivity extends AppCompatActivity{
-    @Override
-    protected void onCreate(Bundle bundle){
-        super.onCreate(bundle);
+import core.parent.core.R;
 
+public class ConfigureKidsDeviceActivity extends ActionBarActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_configure_kids_device);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_configure_kids_device, menu);
         return true;
     }
 

@@ -26,5 +26,6 @@
         android:id="@+id/kids_button"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/parent_button"
-        android:layout_alignStart="@+id/parent_button" />
+        android:layout_alignStart="@+id/parent_button"
+        android:onClick="clickKidEvent" />
 </RelativeLayout>

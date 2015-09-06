@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.parent.parent.AskDetailOfParentActivity"
+    android:id="@+id/ask_detail_of_parent"
+    android:transitionGroup="true">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/enter_phone_no_of_parent_text"
+        android:layout_marginTop="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:focusable="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/ask_phone_no_of_parent_btn"
+        android:layout_below="@+id/enter_phone_no_of_parent_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:onClick="onClickAskPhoneNoOfParent" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registrationProgrssBar"
+        android:indeterminate="false"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/enter_phone_no_of_parent_text"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/enter_phone_no_of_parent_text"
+        android:layout_alignStart="@+id/enter_phone_no_of_parent_text"
+        android:layout_alignRight="@+id/enter_phone_no_of_parent_text"
+        android:layout_alignEnd="@+id/enter_phone_no_of_parent_text"
+        android:layout_alignBottom="@+id/ask_phone_no_of_parent_btn" />
+</RelativeLayout>

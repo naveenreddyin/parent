@@ -12,7 +12,8 @@
         android:text="Configure kids devices"
         android:id="@+id/kids_devices_configure_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="74dp" />
+        android:layout_marginTop="74dp"
+        android:onClick="onClickConfigureKidsDevice" />
 
     <Button
         android:layout_width="wrap_content"
@@ -23,5 +24,6 @@
         android:layout_alignLeft="@+id/kids_devices_configure_button"
         android:layout_alignStart="@+id/kids_devices_configure_button"
         android:layout_alignRight="@+id/kids_devices_configure_button"
-        android:layout_alignEnd="@+id/kids_devices_configure_button" />
+        android:layout_alignEnd="@+id/kids_devices_configure_button"
+        android:onClick="onAssignTasksClick" />
 </RelativeLayout>

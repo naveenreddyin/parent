@@ -4,7 +4,15 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_parent">Parent App</string>
+    <string name="pref_is_parent"></string>
     <string name="is_parent">false</string>
+    <string name="pref_is_kid"></string>
     <string name="is_kid">false</string>
     <string name="title_activity_kid">Parent App</string>
+    <string name="title_activity_configure_kids_device">ConfigureKidsDevice</string>
+    <string name="title_activity_ask_detail_of_parent">AskDetailOfParentActivity</string>
+    <string name="pref_value_for_phone_no">phoneNo</string>
+    <string name="pref_phone_no"></string>
+    <string name="title_activity_connect_to_parent">ConnectToParentActivity</string>
 </resources>
+

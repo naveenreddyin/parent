@@ -3,21 +3,27 @@ package com.parent.utils;
 import android.content.Context;
 import android.content.Intent;
 
+import core.parent.core.BaseAcitivity;
+
 /**
  * Created by naveenkumarvasudevan on 8/16/15.
  */
 public class CommonUtilities {
-
+    public static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     // give your server registration url here
-    static final String SERVER_URL = "http://10.0.2.2:8000/gcm";
+    public static final String SERVER_URL = "http://10.0.2.2:8000/";
+
+    public static final String REGISTRATION_URL = "registration/register-parent-app/";
+
+    public static final String CONNECT_URL = "registration/connect-app/";
 
     // Google project id
-    static final String SENDER_ID = "204810776192";
+    public static final String SENDER_ID = "204810776192";
 
     /**
      * Tag used on log messages.
      */
-    static final String TAG = "AndroidHive GCM";
+    public static final String TAG = "Parent App";
 
     static final String DISPLAY_MESSAGE_ACTION =
             "core.parent.core.DISPLAY_MESSAGE";
@@ -38,4 +44,5 @@ public class CommonUtilities {
         intent.putExtra(EXTRA_MESSAGE, message);
         context.sendBroadcast(intent);
     }
+
 }

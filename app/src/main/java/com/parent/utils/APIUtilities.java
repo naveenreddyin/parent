@@ -24,5 +24,23 @@ import com.google.android.gms.gcm.GoogleCloudMessaging;
 /**
  * Created by naveenkumarvasudevan on 8/16/15.
  */
-public class ServerUtilities {
+public class APIUtilities {
+    private static final int MAX_ATTEMPTS = 5;
+    private static final int BACKOFF_MILLI_SECONDS = 2000;
+    private String method = null;
+
+    private void execute(){
+
+    }
+
+    private APIUtilities setMethod(String method){
+        this.method = method;
+        return this;
+    }
+
+    private String getMethod(){
+
+        return method;
+    }
+
 }
